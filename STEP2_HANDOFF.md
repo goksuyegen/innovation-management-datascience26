@@ -227,6 +227,25 @@ Geosystem Research, Liquid Robotics, Solar Sailor, Guangzhou Shunhai Shipyards.
 6. **Not merged:** PEPPAS ANTONIOS (individual) with ETME PEPPAS KAI SYNERGATES (his firm): different legal owners;
    individuals are analysed separately.
 
+### Update 2026-11-10 (later the same day): switched to PROD
+- **Development continues on PROD** (`ENV = "PROD"`): each cell runs in ~2 seconds, and TEST is too small to read
+  (3-year windows with 2–3 families). All TEST numbers above are superseded once the notebook is re-run on PROD.
+- PROD sector: codes 2,436 · keywords 9,025 · union 10,390 · codes-only 1,365 → kept 860 with the extended drone words ·
+  **final sector 9,885 families** · **7,282 families with applicants** (9,012 rows) after the PI / year filters
+  (26% attrition — to explain, likely Chinese utility models dropped by `IPR_TYPE = "PI"`).
+- `DRONE_WORDS` extended: `unmanned|uncrewed|crewless|pilotless|driver.?less|autonom|drone|remote.?control|radio.?control|\busv\b|unattended|robot|payload|glider`.
+- Sector rule **frozen** (markdown cell "Sector definition: frozen" in the notebook): underwater overlap 5.3% kept;
+  RC/bait boats out of scope; no flying-drone exclusion.
+- The `.in_(list(...))` with ~10k ids works on PROD (no chunking needed).
+- Validation: 100 random families (`random_state=42`, cell after the underwater check) → labels in
+  `work/validation/sector_validation_sample_labeled.csv` (exception added in `.gitignore`). A first sample drawn
+  before the drone-word update was discarded (not reproducible). Labelling rule *proposed* (user has not confirmed yet): a
+  generic ship component counts as relevant only if the abstract mentions unmanned / autonomous / remote operation.
+- Still to redo on PROD: unknown types, `NAME_MERGES`, `TYPE_FIXES`, `COUNTRY_FIXES`, non-CN office countries,
+  Method C check, `MIN_FAMILIES` threshold, and the known-players recall check (search known USV makers — e.g.
+  Saildrone, Sea Machines, L3Harris/ASV, Kongsberg, Maritime Robotics, Liquid Robotics, Zhuhai Yunzhou — in
+  `links["applicant"]`; for any NOT FOUND, check Google Patents `assignee:(...)` to see whether the query missed them).
+
 ---
 
 ## 5. Improvements to the existing notebook (do these first, small)

@@ -1,0 +1,101 @@
+row,title,relevant (1/0),labeled_by,note
+1,Unmanned boat for cleaning garbage on water,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+2,Onboard marine kite pull-type communication system of unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+3,Unmanned ship-based water quality detection system,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+4,Unmanned ship navigation and automatic driving equipment and method thereof,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+5,Unmanned ship dynamic obstacle avoidance control method,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+6,"Wireless communication device, unmanned sub-ship, unmanned mother ship, and unmanned ship device",1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+7,Unmanned boat for sea rescue,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+8,Self-reconfiguration unmanned surface vehicle docking method,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+9,Unmanned ship formation preset time control method based on non-singular sliding mode surface,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+10,"Unmanned ship bridge crossing method and device, computer equipment and storage medium",1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+11,Intelligent multifunctional clearing robot for water surface,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+12,High-precision self-guard cooperative detection method for unmanned surface vehicle,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+13,Unmanned boat autonomous mooring system and method based on monocular vision and laser data fusion,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+14,Unmanned ship for sewage treatment sampling,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+15,BERGEVORRICHTUNG UND ZUGEHÖRIGES VERFAHREN,?,pending abstract,German 'recovery device': recovery of what? check abstract
+16,Unmanned boat capable of being used for fountain and firefighting,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+17,Autonomous data acquisition system and method,?,pending abstract,generic 'autonomous data acquisition': at sea / on a vessel? check abstract
+18,Modularized intelligent unmanned air floating platform and overwater fixing method thereof,?,pending abstract,unmanned floating platform: a vessel or a moored platform? check abstract
+19,Unmanned ship six-degree-of-freedom prediction method and system based on visual analysis,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+20,Amphibious unmanned ship for ocean observation,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+21,Retrieve unmanned ship with communication interference device,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+22,Method for calculating probability of detecting normal distribution target by multiple unmanned ships,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+23,Unmanned ship data-driven adaptive dynamic trajectory tracking controller,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+24,Method for unmanned surface vehicle to collaboratively surround unknown target in GPS denial environment,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+25,Method and device for testing autonomous cognition and decision of unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+26,Riverway underway sampling unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+27,Unmanned-ship-towed underwater magnetic detection system,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+28,Optical fiber array and sound source integrated cable-sharing winch of active and passive towing sonar system carried by light unmanned surface vessel and working method of optical fiber array and sound source integrated cable-sharing winch,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+29,Unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+30,Collision avoidance system based on autopilot,?,pending abstract,autopilot collision avoidance: unmanned or crewed ships? check abstract
+31,NAVIGATION SYSTEM OF UNMANNED SHIP AND METHOD FOR CONTROLLING NAVIGATION USING THE SAME,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+32,Modularized quick-release air bag buffer device for unmanned ship and unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+33,Method and system for positioning unmanned aerial vehicle in GPS degradation scene,0,claude (title),"flying drone (UAV positioning), not a surface vessel"
+34,Dynamic positioning control system and method for underactuated unmanned surface vehicle,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+35,Pneumatic unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+36,Control method and device of unmanned ship system,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+37,Unmanned surveying vessel anti-collision device,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+38,Unmanned ship laser radar point cloud data correction method based on attitude sensor and GNSS,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+39,Unmanned dynamic buoy system for measuring precise marine location Method thereof and Computer readable storage medium,?,pending abstract,unmanned dynamic buoy: self-propelled (USV-like) or moored buoy? check abstract
+40,Automatic laying and recycling system for unmanned surface vehicles,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+41,Self-adaptive sliding mode trajectory tracking control method and system for unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+42,AUTONOMOUS FLOATING DEVICE AND METHOD FOR SLAVING THE POSITION OF A NAUTICAL CRAFT,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+43,Comparative measurement evaluation method and system for observing stormy wave flow field by high-frequency ground wave radar,0,claude (title),"coastal HF radar for waves, no vessel"
+44,Unmanned ship remote feeding management method and system based on deep learning,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+45,"DRIVING MECHANISM OF UNMANNED VESSEL, RELEASING STRUCTURE AND FEEDING DEVICE ASSOCIATED WITH THE DRIVING MECHANISM OF UNMANNED VESSEL",1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+46,Unmanned ship trajectory tracking control method based on optimized backstepping method,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+47,Depth-adjustable multifunctional plankton quantitative collection device based on unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+48,Water quality monitoring unmanned ship system and method based on multi-sensor fusion,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+49,"Unmanned ship path planning method, device and equipment and storage medium",1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+50,Sampling device of multi-point unmanned ship platform with different depths,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+51,Schistosome cercaria collecting device,?,pending abstract,parasite sampling device: carried by an unmanned ship? check abstract
+52,Intelligent unmanned cleaning ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+53,Underwater terrain intelligent surveying ship,?,pending abstract,intelligent surveying ship: unmanned? check abstract
+54,Tvangsstyringsmekanisme for navlestreng,?,pending abstract,"Norwegian 'forced steering mechanism for umbilical': probably subsea/ROV, check abstract"
+55,Multi-unmanned ship path planning method for marine pollution inspection sampling,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+56,Antenna installation auxiliary support for unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+57,Electric resonance water treatment autonomous ship applied to large water body,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+58,Unmanned ship path tracking active disturbance rejection control method based on sideslip angle compensation,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+59,Ship longitudinal queue hybrid predictive control method based on hybrid logic dynamic model,?,pending abstract,ship platooning control: autonomous/unmanned ships? check abstract
+60,"Obstacle removing propeller, water surface monitoring robot and position switching method of intercepting mesh enclosure",1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+61,Movable lifting type unmanned ship folding and unfolding active motion compensation device and working method thereof,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+62,Vehicle configuration with motors that rotate between a lifting position and a thrusting position,?,pending abstract,"motors rotating between lift and thrust: probably aerial or hybrid, check abstract"
+63,SYSTEM AND METHOD FOR SURVEYING MIRINESEISMIC REFRACTION USING UNMANNED GLIDERS,?,pending abstract,seismic survey with unmanned gliders: surface or underwater gliders? check abstract
+64,Unmanned ship capable of being used for fountains and fire protection,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+65,Performance measuring device for small wind driven generator of unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+66,Distributed formation encircling tracking control method and system for multiple unmanned ships,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+67,Heading and attitude measuring and sending device for unmanned boat,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+68,Method and apparatus for monitoring water flow in a water jet propulsion system,?,pending abstract,"water-jet propulsion monitoring: any ship, unmanned? check abstract"
+69,Unmanned ship target identification and tracking method and system based on navigation radar,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+70,Unmanned ship for surveillance,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+71,The blocking system for escaping ship using vessel mounting unmanned ships,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+72,Test platform for verifying core control strategy of dynamic positioning system of water platform,?,pending abstract,test platform for dynamic positioning: of an unmanned vessel? check abstract
+73,Depth measurement comparison device,?,pending abstract,generic depth measurement device: on an unmanned boat? check abstract
+74,Water quality sampling unmanned ship system with dynamic positioning function,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+75,Coast defence inspection device easy to assemble,?,pending abstract,coast defence inspection device: vessel or land device? check abstract
+76,System for measuring ship draught and use method thereof,?,pending abstract,ship draught measurement: crewed ships? check abstract
+77,Method and system for integrated classification evaluation of navigation scene complexity of unmanned ship based on color texture visual field joint features,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+78,Multi-role unmanned vehicle system and associated methods,?,pending abstract,multi-role unmanned vehicle: which domain (air/sea/land)? check abstract
+79,Underactuated unmanned surface vessel dynamic positioning method,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+80,Inflatable paddy field plant protection operation unmanned remote control ship and control method thereof,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+81,Unmanned ship garbage collection method and system based on multi-source fusion and causal reasoning,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+82,Reconnaissance using unmanned surface vehicles and unmanned micro-aerial vehicles,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+83,Distributed unmanned ship cluster collaborative awareness and control integration method and system in high sea condition environment,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+84,Sensor virtualization method and system for unmanned ship control system,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+85,Water surface garbage cleaning method and unmanned intelligent cleaning ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+86,Unmanned ship laying device,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+87,Unmanned surface vessel path planning method and system,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+88,River channel unmanned surveying and mapping ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+89,Remote control multi-station surface-layer water sampling device of unmanned ship platform,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+90,"Trajectory tracking method, device, equipment, medium and product of electric unmanned ship",1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+91,Unmanned ship multi-water-layer plankton monitoring system and monitoring method,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+92,Unmanned ship,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+93,Multi-mode wave-propelled unmanned vehicle,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+94,Shipborne automatic water quality sampler,?,pending abstract,shipborne water sampler: on unmanned ships? check abstract
+95,Unmanned ship pose control method based on reinforcement learning PPO2 algorithm,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+96,Robotic sailing device and design,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+97,Unmanned ship path planning method and system based on improved particle swarm algorithm,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+98,Oil-electricity hybrid water-air dual-purpose multi-rotor unmanned aerial vehicle,0,claude (title),"multi-rotor aerial drone that can land on water, not a surface vessel"
+99,Unmanned ship withdrawing laying system and method for unmanned ship recovery by using same,1,claude (title),explicitly an unmanned/autonomous surface vessel or its system
+100,"Method and system for unmanned ship to arrive at target location, storage medium and unmanned ship",1,claude (title),explicitly an unmanned/autonomous surface vessel or its system

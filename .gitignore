@@ -16,3 +16,5 @@ __pycache__/
 Thumbs.db
 
 # token
+# hand-labelled validation samples (small, part of the method)
+!work/validation/*.csv
