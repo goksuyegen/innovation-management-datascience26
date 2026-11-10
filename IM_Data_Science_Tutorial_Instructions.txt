@@ -1,0 +1,32 @@
+Innovation Management – Data Science & Engineering
+Tutorial Materials
+
+The tutorial notebooks and related materials are available here:
+
+https://github.com/graziasveva/innovation-management-datascience26
+
+Please use this repository as the reference source for the tutorial material throughout the course.
+
+Instructions
+
+1. Clone the repository the first time you use it:
+   git clone https://github.com/graziasveva/innovation-management-datascience26.git
+
+2. Before each tutorial, update your local copy so that you are working with the latest version:
+   git pull
+
+3. Please do not rely on an old local copy of the notebooks. Materials may be updated, corrected, or extended before each tutorial.
+
+4. Open the notebook corresponding to the tutorial session and follow the instructions provided in the notebook.
+
+5. If you want to modify the notebooks for your own work, it is recommended to save a personal copy so that future updates from the repository do not overwrite your changes.
+
+6. If you encounter a problem with the code:
+   - first make sure you have pulled the latest version of the repository;
+   - check that you are using the required environment/platform indicated in the tutorial;
+   - read the error message carefully and identify the cell where the problem occurs.
+
+7. For Project Work activities, use the tutorial notebooks as examples and starting points, but adapt the queries, code, and analysis to your own research question.
+
+Repository:
+https://github.com/graziasveva/innovation-management-datascience26
