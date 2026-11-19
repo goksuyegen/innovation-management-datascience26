@@ -7,6 +7,9 @@
 >
 > It replaces `STEP2_GUIDE.md`, which was written for a different sector (quantum computing).
 >
+> **Report material** (final numbers, ready-to-use sentences, method choices, references) is collected in
+> `REPORT_NOTES.md`. Add every new PROD result or decision there and mark it ✅ final or ⏳ pending.
+>
 > Last updated: 2026-11-10.
 
 ---
@@ -191,7 +194,7 @@ Lecture slides are in `c:\Users\fqsod\Downloads\Material (1)\IM_Theory_0..5_*.pd
 | 5 | `bf2d01a1` | `families` subquery (PI, `appln_id < 900000000`, year = min `earliest_filing_year` within 2000–2025); `raw_sector` = applicants (`applt_seq_nr > 0`) with `psn_id, psn_name, han_name, psn_sector, ctry`; `family_cpc` = all CPC codes of the families | **153 families with applicants**, 198 rows |
 | 6 | `671e1c63` | raw name counts | psn_name 163, han_name 165, psn_id 167 |
 | 7 | `fb66c396` | Method A (dictionary of legal forms) and Method B (`cleanco`) | 163 → 160 names with both |
-| 8 | `43a3009a`, `48a2deb2` | **gold standard** (`PATSTAT_500_label_datav4.csv`, 3,192 names in 481 orgs), pairwise precision/recall/F1; Method C = first word | A: P 0.995 R 0.002 F1 0.004 · B: F1 0.005 · **C: P 0.961 R 0.923 F1 0.942** |
+| 8 | `43a3009a`, `48a2deb2` | **gold standard** (`PATSTAT_500_label_datav4.csv`, 3,192 names in 481 orgs), pairwise precision/recall/F1; Method C = first word | scored on **all** 3,192 names: A: P 0.995 R 0.002 F1 0.005 · B: P 0.996 R 0.003 F1 0.006 · **C: P 0.961 R 0.923 F1 0.942** (a separate held-out-half study with Terrorizer is in `work/name_harmonisation/`; its numbers differ because it scores a different subset) |
 | 9 | `7f040447` | Method C checked on our sector | **C wrongly merges 67 names** (all "ZHEJIANG…", "CHANGSHA…", "CHINA…": Chinese names start with a city) → **decision: use Method A** |
 | 10 | `002dc12c`, `686946f1` | `NAME_MERGES` (SHUNHAI SHIP MAKING → SHUNHAI SHIPYARDS; CSIC lines still commented); `links` = raw_sector + `applicant` (A + merges) + `type` from `psn_sector` | 159 applicants |
 | 11 | `790882bd` | type fallback from name words (`FIRM_WORDS` → firm; UNIVERSITY/COLLEGE → university; INSTITUTE/ACADEMY → gov/non-profit) + `TYPE_FIXES` (Xunord, ETME Peppas → firm) | only **E-4S** still unknown |
@@ -239,8 +242,11 @@ Geosystem Research, Liquid Robotics, Solar Sailor, Guangzhou Shunhai Shipyards.
 - The `.in_(list(...))` with ~10k ids works on PROD (no chunking needed).
 - Validation: 100 random families (`random_state=42`, cell after the underwater check) → labels in
   `work/validation/sector_validation_sample_labeled.csv` (exception added in `.gitignore`). A first sample drawn
-  before the drone-word update was discarded (not reproducible). Labelling rule *proposed* (user has not confirmed yet): a
-  generic ship component counts as relevant only if the abstract mentions unmanned / autonomous / remote operation.
+  before the drone-word update was discarded (not reproducible). Labelling rule (confirmed by the user): a generic ship
+  component counts as relevant only if the abstract mentions unmanned / autonomous / remote operation.
+  **Result: precision = 90/100 (Wilson 95% CI 82.6–94.5%)**. The 10 errors: 3 flying drones (UAV), 2 underwater
+  (submersible seismic node; ballast + pressurised "multi-role" vehicle), 3 generic ship devices without unmanned
+  operation, 1 moored floating platform, 1 coastal HF radar. No single error type dominates → no rule change.
 - Still to redo on PROD: unknown types, `NAME_MERGES`, `TYPE_FIXES`, `COUNTRY_FIXES`, non-CN office countries,
   Method C check, `MIN_FAMILIES` threshold, and the known-players recall check (search known USV makers — e.g.
   Saildrone, Sea Machines, L3Harris/ASV, Kongsberg, Maritime Robotics, Liquid Robotics, Zhuhai Yunzhou — in
