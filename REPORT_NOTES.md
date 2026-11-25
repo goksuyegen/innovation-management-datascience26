@@ -113,11 +113,14 @@ Theory: Theory 0 (types of IPR; utility models as a weaker form of protection).
 - `han_name` (OECD HAN) is not used: it is filled with a release lag and gives no fewer distinct names here.
 - **Ultimate owner:** research institutes and subsidiaries are merged into their group (for example, CSIC institutes
   into "China Shipbuilding Industry Corporation (CSIC)"), following WIPO's consolidation to the ultimate owner
-  (Theory 3, the "name game"). ⏳ Final list of merges on PROD.
+  (Theory 3, the "name game"). Groups use **today's owner** (Step 3 scores who STX could partner with or buy now).
+  Rules in `src/owners.py`; full list with reasons in A7.
 
 ### A6. Applicant type and country ✅ (rules) · ⏳ (numbers on PROD)
 - **Type:** PATSTAT `psn_sector` first. If that is empty or UNKNOWN, words in the name (firm legal forms →
-  firm; UNIVERSITY/COLLEGE → university; INSTITUTE/ACADEMY → government or research). Then hand fixes.
+  firm; UNIVERSITY/COLLEGE → university; INSTITUTE/ACADEMY/LABORATORY → government or research). Then hand fixes.
+  LABORATORY added on 24 Nov: two public labs (Southern Marine Science and Engineering Guangdong Laboratory, Peng
+  Cheng Laboratory) had no type; firm words are checked first, so "X LABORATORY CO LTD" stays a firm.
   Justification: the PATSTAT manual says PSN_SECTOR is filled 3–4 months after each release, so new names are unknown.
 - **Country:** the most frequent country written on the applicant's records. Failing that, the most frequent
   **national** office of the applicant's families (EP and WO excluded). Failing that, a hand fix. Justification: the
@@ -126,8 +129,49 @@ Theory: Theory 0 (types of IPR; utility models as a weaker form of protection).
 - Report the share of countries by source (written, office, hand). ⏳ PROD numbers.
 - Individuals are kept separate from their own firms (they are different legal owners).
 
-### A7. Hand corrections ⏳
-List every entry of `NAME_MERGES`, `TYPE_FIXES` and `COUNTRY_FIXES` (final PROD version) with a one-line reason.
+### A7. Hand corrections and ultimate owners (PROD, 25 Nov)
+
+**Ultimate-owner groups** (`src/owners.py`, a regular expression on the cleaned name; the names absorbed are written
+to `outputs/tables/ultimate_owner_merges_PROD.csv`):
+
+| Group | Members | Reason |
+|---|---|---|
+| CSSC | CSSC, former CSIC and their numbered research institutes | CSIC and CSSC merged in 2019 |
+| CETC, CCCC | institutes and subsidiaries, incl. China E-Tech (Ningbo) Maritime Electronics Research Institute (= CETC Ningbo, 中电科) | state groups |
+| PLA | military units, Naval University of Engineering | one owner |
+| HD Hyundai | Hyundai Heavy, Samho, Mipo, Avikus… | group subsidiaries |
+| Hanwha | Hanwha units, former DSME | Hanwha bought DSME in 2023 (Hanwha Ocean) |
+| Boeing | Boeing, Liquid Robotics (Wave Glider) | acquired 2016 |
+| Kongsberg Gruppen | Kongsberg Maritime, Seatex, Discovery… (not Kongsberg Automotive) | one group |
+| thyssenkrupp | TKMS, Atlas Elektronik | Atlas belongs to TKMS |
+| SLB | Schlumberger, WesternGeco | seismic unit of SLB |
+| **Zhuhai Yunzhou (OceanAlpha)** | Zhuhai Yunzhou Intelligence / Intelligent Technology / Intelligent S T; **Pearl Hai Yunberg Intelligent Science Technology; Shenzhen Yunzhou Innovation Technology; Shenzhen Yunzhou Technology; Jiangsu Yunzhou Intelligent Technology; Yunzhou Yancheng Innovation Technology** (+ "Shenhzne" typo) | see below |
+| Sifang | Beijing Sifang Automation; Sifang Jibao Wuhan Software; Sifang Zhifang / Sifang Intelligent Wuhan Control Technology | Wuhan subsidiaries; they co-file the same families (4 names: 71 family counts → 39 families). All sampled titles are unmanned ships. Not CRRC Qingdao Sifang (railways) |
+| Exail | iXblue, ECA Group / ECA Robotics | combined as Exail in 2022 (Groupe Gorgé, now Exail Technologies) |
+| Navigation Brilliance (Qingdao) | "Brillance" and "Brilliance" spellings | same company, typo in PATSTAT |
+
+**Assumption to state (Zhuhai Yunzhou).** The extra "Yunzhou" applicants are merged into OceanAlpha because
+(1) they carry the same brand name, "Pearl Hai" being a word-by-word translation of Zhuhai (珠海); (2) a sample
+of their family titles on TIP shows only USVs of OceanAlpha's product line (formation control, launch and recovery,
+masts, sampling boats); (3) OceanAlpha is the only large USV maker with that name. Their ownership was **not**
+verified in a company registry (Qichacha / Tianyancha). Effect: Zhuhai Yunzhou goes from 87 to **115 families in 2012–2022**
+(136 over all years); in the Step 3 firms ranking it moves from #12 to #7. Sentence for the appendix:
+
+> "Applicants named 'Yunzhou' in Shenzhen, Jiangsu and Yancheng, and 'Pearl Hai Yunberg' (a literal translation of
+> Zhuhai Yunzhou), are counted as part of Zhuhai Yunzhou Intelligence Technology (OceanAlpha): they share its name
+> and all their patent families describe OceanAlpha-type unmanned surface vessels. We did not verify their
+> ownership in a company registry; without this merge OceanAlpha would have 87 instead of 115 families in 2012–2022."
+
+**Name merges** (`hand_fixes.name_merges` in `config/sector.yaml`): Guangzhou Shunhai Ship Making → Guangzhou Shunhai
+Shipyards (same yard); CSIC No 707 and 715th institutes → CSIC (then CSSC); "SHENHZNE YUNZHOU INNOVATION TECHNOLOGY"
+→ Shenzhen Yunzhou Innovation Technology (typo).
+
+**Type fixes:** Xunord S R L → firm, ETME Peppas kai Synergates → firm (legal form not recognised).
+**Country fixes:** Peppas Antonios → GR.
+
+**Not changed, but to mention:** Dongguan Lianzhou Intellectual (8 families, none granted) and Zhongying Fund
+Management (21 families) look like patent intermediaries, not USV makers; they stay in the data, flagged as
+possible non-practicing entities. SLB's country shows as CA (from its records); the group is headquartered in the US.
 
 ---
 
